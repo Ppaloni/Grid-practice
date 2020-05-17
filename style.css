@@ -46,7 +46,7 @@ body {
 }
 
 
-}
+
 img {
     max-width: 100%;
 }
@@ -152,10 +152,88 @@ img {
 .boxes {
     display: grid;
     grid-gap: 20px;
-    /*ei toiminu tämä vielä!*/
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /*ei toiminu tämä vielä! Ei mene responsiivisesti, ehkä media query vois toimii*/
+
 }
 
+.box {
+    background: var(--lightgreen);
+    text-align: center;
+    padding: 1.5rem 2rem;
+    box-shadow: var(--shadow);
+}
+/*boxes end*/
 
-/* https://www.youtube.com/watch?v=moBhzSC455o&t=1942s
-jäätiin kohtaan 33.56*/
+/*Info*/
+.info {
+    background: var(--lightgreen);
+    box-shadow: var(--shadow);
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem;
+}
+/*Info ends*/
+
+/*Portfolio*/
+.portfolio {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 1.5rem, 2rem;
+
+}
+
+.portfolio img {
+    width: 100%;
+    box-shadow: var(--shadow);
+}
+
+/*Portfolio ends*/
+
+/*Footer*/
+footer {
+    margin-top: 2rem;
+    background: var(--darkgreen);
+    color: var(--blue);
+    text-align: center;
+    padding: 1rem;
+}
+/*Footer ends*/
+
+/*Media Queries*/
+/*tämä max 700px laite, tabletit yms*/
+@media(max-width: 700px) {
+    .top-container {
+        grid-template-areas: 
+        'showcase showcase'
+        'top-box-a top-box-b';
+    }
+    .showcase h1 {
+        font-size: 2.5rem;
+    }
+    .main-nav ul {
+        grid-template-columns: 1fr;
+    }
+    .info {
+        grid-template-columns: 1fr;
+    }
+    .info .btn {
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+}
+
+/*tämä max 500px laite, eli älypuhelin yms.*/
+@media (max-width: 500px) {
+    .top-container {
+        grid-template-areas: 
+        'showcase'
+        'top-box-a'
+        'top-box-b';
+    }
+}
+
+/*Media Queries end*/
