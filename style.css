@@ -11,10 +11,30 @@ Fontit:
 #05386B
 #EDF5E1 */
 :root {
-    --primary: ;
-    --darkgreen: ;
-    --lightgreen: ;
-    --shadow: ;
+    --primary: #5CDB95 ;
+    --darkgreen: #379683;
+    --lightgreen: #8EE4AF;
+    --blue: #05386B;
+    --white: #EDF5E1;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
     
-
 }
+
+html {
+    box-sizing: border-box;
+    font-family: "Lato", "Montserrat", sans-serif;
+    color: var(--blue)
+    
+}
+h1, h2, h3, h4, h5, h6 {
+    color: var(--white)
+}
+
+body {
+    background: var(--primary);
+    margin: 30px 50px;
+    line-height: 1.4;
+}
+
+/* https://www.youtube.com/watch?v=moBhzSC455o&t=1942s
+jäätiin kohtaan 17.55*/
