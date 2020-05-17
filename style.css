@@ -1,0 +1,20 @@
+/*CSS Variables */
+/*Voidaan luoda variableja,
+joita voi nopeasti käyttää asettaakseen jonku värin tai varjon milloin vain tehdessä CSS */
+
+/*Valittuna oli seuraavat väriteemat:
+Taustat:
+#379683
+#5CDB95
+#8EE4AF
+Fontit:
+#05386B
+#EDF5E1 */
+:root {
+    --primary: ;
+    --darkgreen: ;
+    --lightgreen: ;
+    --shadow: ;
+    
+
+}
