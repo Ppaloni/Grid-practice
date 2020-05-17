@@ -90,8 +90,10 @@ img {
     display: grid;
     grid-gap: 20px;
     grid-template-areas:
-        'showcase top-box-a'
-        'showcase top-box-b';
+        'showcase showcase'
+        'showcase showcase'
+        'top-box-a top-box-b'
+        'top-box-a top-box-b';
     }
 /*Top container ends*/
 
