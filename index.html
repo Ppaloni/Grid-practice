@@ -32,7 +32,7 @@ sieltä myös latasin tähän harjoitukseen 2 valokuvaa.-->
     <!--Top container-->
     <section class="top-container">
         <header class="showcase">
-            <h1>Your Web Presence</h1>
+            <h1>Perttu Paloniemi</h1>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, aliquam!
                 Vero autem sequi magni sapiente!</p>
                 <a href="#" class="btn">Read More</a>
@@ -113,8 +113,24 @@ sieltä myös latasin tähän harjoitukseen 2 valokuvaa.-->
     <p>PerttuPaloniemi &copy; 2020</p>
 </footer>
 <!--Footer ends-->
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("main-nav");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
+
 </div>
 <!--Wrapper ends-->
+
     
 </body>
 </html>
